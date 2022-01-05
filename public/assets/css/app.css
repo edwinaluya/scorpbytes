@@ -1,4 +1,10 @@
 h1 {
     font-family: "Inter", sans-serif;
     font-weight: 100;
+    font-size: calc(32px + 4vw);
+}
+
+main > header {
+    padding-top: 64px;
+    padding-bottom: 64px;
 }
