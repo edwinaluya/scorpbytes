@@ -1,2 +1,5 @@
-# noemyobedoza
-Noemy Obedoza's Website
+# Scorpbytes Outsourcing Company
+
+Static website for Scorpbytes PH Ltd.
+
+Built for Noemy Obedoza.
