@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Inter', sans-serif;
-    padding-top: 88px;
+    padding-top: 72px;
 }
 
 body.nav\:open {
@@ -53,7 +53,13 @@ body > header {
 }
 
 body > header img {
-    height: 56px;
+    height: 40px;
+}
+
+@media screen and (min-width: 992px) {
+    body > header img {
+        height: 56px;
+    }
 }
 
 body > header nav {
@@ -255,8 +261,4 @@ main .btn {
     margin-right: 1rem;
     padding-bottom: var(--size);
     width: calc(2px + var(--size));
-}
-
-[data-toggle="menu"] {
-
 }
