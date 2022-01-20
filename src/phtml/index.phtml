@@ -1,0 +1,120 @@
+<?php
+
+$PAGE = 'Home';
+
+$page = [
+    'title' => 'We are Scorpbytes. An outsourcing company based in the Philippines.',
+    'desc'  => 'We are a committed team of productive, brilliant, capable, proactive people offering quality outsourcing work
+        in the fields of customer service, telemarketing and data entry.',
+];
+
+$og = [
+    'title' => 'We are Scorpbytes. An outsourcing company based in the Philippines.',
+    'url'   => 'https://scorpbytes.netlify.app',
+    'desc'  => $page['desc'],
+    'img'   => '',
+]
+
+?>
+
+<!doctype html>
+<html lang="en">
+<head>
+    <?php require_once '_head.phtml'; ?>
+</head>
+
+<body>
+<?php require_once '_header.phtml'; ?>
+
+<main>
+    <header class="container d-flex flex-column align-items-start align-items-lg-center">
+        <h1 class="text-lg-center mb-4">We are <strong style="color: #3c2e69">Scorpbytes</strong>.<br>An outsourcing
+            company based in the <em>Philippines</em>.</h1>
+        <a href="/contact" class="btn btn-primary">Let's Work Together.</a>
+    </header>
+
+    <section>
+        <div class="img-box">
+            <img src="assets/img/index.jpg" alt="">
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="container">
+        <div class="row row-cols-lg-2 g-lg-4">
+            <div>
+                <h2 class="mb-3">Our Company</h2>
+                <p class="mb-3 sect-h2">Who we are & what we do.</p>
+            </div>
+
+            <div>
+                <p class="quotes">&rdquor;</p>
+                <p style="font-size: 20px" class="mb-3">We are a committed team of productive, brilliant, capable, proactive people offering quality outsourcing work
+                    in the fields of customer service, telemarketing and data entry.</p>
+                <a href="/about">Learn more</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" style="background-color: var(--bs-gray-100)">
+        <div class="container">
+            <div class="row row-cols-lg-2 g-lg-4">
+                <div class="">
+                    <h2>Testimonials</h2>
+                    <p class="sect-h2 mb-5">What our clients are saying.</p>
+                </div>
+
+                <ul>
+                    <li>
+                        <p>We've been working with Scorpbytes for 1.5yrs after several sub-satisfactory results from other resource agencies.
+                            Their willingness to understand the needs of my business has allowed them to build a strong team with a very
+                            positive culture.</p>
+                        <div class="d-flex align-items-center">
+                            <div class="img-box rounded-circle">
+                                <img src="assets/img/clients/peter.jpg" alt="Peter G.">
+                            </div>
+                            <p>Peter G.</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <p>Noemy is always very helpful in providing great staffing and plenty of options to me as a client. She always
+                            makes sure I am pleased and with her help, my business has grown over the years.</p>
+                        <div class="d-flex align-items-center">
+                            <div class="img-box">
+                                <img src="assets/img/clients/josh.jpg" alt="Josh H.">
+                            </div>
+                            <p>Josh H.</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <p>The moment I first spoke to Noemi, I knew I was in good hands. She listened carefully to me about my
+                            business needs. She then quickly found an outstanding person for me that is doing an amazing job.</p>
+                        <div class="d-flex align-items-center">
+                            <div class="img-box">
+                                <img src="assets/img/clients/matt.jpg" alt="Matt M.">
+                            </div>
+                            <p>Matt M.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+    <section style="background-color:#414CFA; color: #fff">
+        <div class="container text-center">
+            <h2 style="color: #fff">Work with us</h2>
+            <p class="sect-h2 fw-thin mb-5">Ready to work with us and outsource professionals for your company and business?</p>
+            <a href="contact.html" class="btn btn-outline-light">Get in touch</a>
+        </div>
+    </section>
+</main>
+
+<?php require_once '_footer.phtml'; ?>
+
+<script src="assets/js/app.js"></script>
+</body>
+</html>

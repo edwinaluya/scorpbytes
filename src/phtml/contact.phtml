@@ -1,0 +1,66 @@
+<?php
+
+$PAGE = 'Contact';
+
+$page = [
+    'title' => 'Get in Touch | Scorpbytes. An outsourcing company based in the Philippines.',
+    'desc'  => 'Over the years, we have had the privilege of providing our clients with professionals that deliver on
+        the job. This has always been our vision and we are a mission to provide excellent results.',
+];
+
+$og = [
+    'title' => $page['title'],
+    'url'   => 'https://scorpbytes.netlify.app',
+    'desc'  => $page['desc'],
+    'img'   => '',
+]
+
+?>
+
+<!doctype html>
+<html lang="en">
+<head>
+    <?php require '_head.phtml'; ?>
+</head>
+
+<body>
+<?php require '_header.phtml'; ?>
+
+<main>
+    <header class="container">
+        <h1 class="text-lg-center mb-5">Get in touch with us. We'd love to work with you.</h1>
+
+        <div class="img-box">
+            <img src="assets/img/contact.jpg" alt="">
+        </div>
+    </header>
+
+    <section id="contactInfo" class="container">
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <h2 class="mb-3">Work with us</h2>
+                <p class="h1 mb-5 fw-thin">We'd be delighted to work with you and respond to any enquiry or request.</p>
+            </div>
+
+            <div class="col-12 col-md-6">
+                <h3>Email</h3>
+                <a href="mailto:nhobedoza@gmail.com">nhobedoza@gmail.com</a>
+
+                <h3>Phone</h3>
+                <a href="tel:+639087300550">+639087300550</a>
+
+                <h3>WhatsApp</h3>
+                <a href="https://wa.me/+639087300550">+639087300550</a>
+
+                <h3>Telegram</h3>
+                <a href="tg://resolve?domain=nhobedoza30">@nhobedoza30</a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<?php require '_footer.phtml'; ?>
+
+<script src="assets/js/app.js"></script>
+</body>
+</html>

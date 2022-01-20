@@ -1,0 +1,39 @@
+<?php /** @var string $PAGE */
+
+/** @var array $var Navigation Links */
+$nav = [
+    'Home' => '/',
+    'About' => '/about',
+    'Contact' => '/contact'
+];
+
+if (!function_exists('navLink')) {
+    function navLink($text, $href, $page): string
+    {
+        $attr = 'href="' . $href . '"';
+
+        if ($text === $page) {
+            $attr .= ' aria-current="page"';
+        }
+
+        return "<a $attr>$text</a>";
+    }
+}
+
+?>
+
+<header>
+    <div class="container d-flex justify-content-between align-items-center">
+        <a href="index.html" class="brand">
+            <img src="assets/img/logo.png" alt="Scorpbytes Ph. Ltd">
+        </a>
+
+        <button class="btn" type="button" data-toggle="menu">Menu</button>
+
+        <nav>
+            <?php foreach ($nav as $text => $href): ?>
+                <?= navLink($text, $href, $PAGE) ?>
+            <?php endforeach; ?>
+        </nav>
+    </div>
+</header>

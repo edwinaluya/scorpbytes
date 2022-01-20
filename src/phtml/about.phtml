@@ -1,0 +1,77 @@
+<?php
+
+$PAGE = 'About';
+
+$page = [
+    'title' => 'About our company | Scorpbytes Ph. Ltd. An outsourcing company based in the Philippines.',
+    'desc'  => 'Over the years, we have had the privilege of providing our clients with professionals that deliver on
+        the job. This has always been our vision and we are a mission to provide excellent results.',
+];
+
+$og = [
+    'title' => $page['title'],
+    'url'   => 'https://scorpbytes.netlify.app/about',
+    'desc'  => $page['desc'],
+    'img'   => '',
+]
+
+?>
+
+<!doctype html>
+<html lang="en">
+<head>
+    <?php require '_head.phtml'; ?>
+</head>
+
+<body>
+<?php require '_header.phtml'; ?>
+
+<main>
+    <header class="container">
+        <h1 class="text-lg-center">Best <span style="color: var(--sb-purple); font-weight: 400">Outsourcing Company</span> in the business.</h1>
+    </header>
+
+    <section class="container">
+        <div class="img-box">
+            <img src="assets/img/about.jpg" alt="">
+        </div>
+    </section>
+
+    <section id="mission" class="container">
+        <div class="row row-cols-lg-2 g-lg-5">
+            <div>
+                <h2 class="mb-3">Our Mission</h2>
+                <p class="h2 mb-3 fw-thin">We are passionate about progressive work with excellent results.</p>
+            </div>
+
+            <div>
+                <p class="quotes">&rdquor;</p>
+                <p>To provide exceptional service to clients worldwide while helping Filipino experts attain an online career
+                    that will help maximise their potentials for quality work and excellent results</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="vision" style="background-color: var(--bs-gray-100)">
+        <div class="container">
+            <div class="row row-cols-lg-2 g-lg-5">
+                <div class="order-lg-last">
+                    <h2 class="mb-3">Our Vision</h2>
+                    <p class="h2 mb-3 fw-thin">We are motivated by our commitment to excellent service delivery.</p>
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <p class="quotes">&rdquor;</p>
+                    <p>To become the Philippines top virtual workforce in terms of providing online services. With the commitment
+                        to excellent service, dedication to client's needs and consistency in delivering successful results.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<?php require '_footer.phtml'; ?>
+
+<script src="assets/js/app.js"></script>
+</body>
+</html>
