@@ -1,0 +1,20 @@
+#!/usr/bin/env php
+<?php
+
+require 'src/phtml/Renderer.php';
+
+// Refuse to run when called from php-cgi
+if (substr(php_sapi_name(), 0, 3) === 'cgi')
+{
+    die("The cli tool is not supported when running php-cgi. It needs php-cli to function!\n\n");
+}
+
+$args = array_slice($_SERVER['argv'], 1);
+
+foreach ($args as $file) {
+    $file = __DIR__.'/src/phtml/'.$file.'.phtml';
+
+    Renderer::render($file, __DIR__.'/public');
+}
+
+exit();
